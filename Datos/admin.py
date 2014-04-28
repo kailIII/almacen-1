@@ -11,4 +11,4 @@ from Datos.models import Persona
 admin.site.register(Unidad_Medida)
 admin.site.register(Material)
 admin.site.register(Area)
-admin.site(Persona)
+admin.site.register(Persona)
