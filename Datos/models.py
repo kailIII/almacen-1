@@ -14,13 +14,13 @@ class Unidad_Medida(models.Model):
 
 class Material(models.Model):
     descripcion=models.CharField(max_length=100)
-    precio=models.FloatField(null=True, blank=True)
+    precio=models.FloatField(default=0)
     unidad=models.ForeignKey(Unidad_Medida, verbose_name='Unidad de Medida')
     def __str__(self):
         return self.descripcion
 
     class Meta:
-        verbose_name='Materia'
+        verbose_name='Material'
         verbose_name_plural='Materiales'
 
 class Area(models.Model):
