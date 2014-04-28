@@ -23,5 +23,6 @@ class Area(models.Model):
 
 class Persona(models.Model):
     nombre=models.CharField(max_length=100)
+    area=models.ForeignKey(Area, verbose_name='Area donde trabaja')
     def __str__(self):
         return self.nombre
