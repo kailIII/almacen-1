@@ -22,6 +22,7 @@ class Material(models.Model):
     class Meta:
         verbose_name='Material'
         verbose_name_plural='Materiales'
+        ordering=["descripcion"]
 
 class Area(models.Model):
     nombre=models.CharField(max_length=100)

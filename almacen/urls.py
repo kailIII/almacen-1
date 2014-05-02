@@ -9,4 +9,6 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^materiales/$', 'Datos.views.index'),
+    url(r'^materiales/(?P<material_id>\d+)/$', 'Datos.views.detalle'),
 )

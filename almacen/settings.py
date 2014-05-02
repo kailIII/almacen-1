@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 
 # Quick-start development settings - unsuitable for production
@@ -61,9 +62,9 @@ DATABASES = {
     'default':{
     'ENGINE': 'django.db.backends.postgresql_psycopg2',
 		'HOST': '170.0.0.16',
-        'NAME': 'planificacion',
+        'NAME': 'almacen',
 		'PASSWORD': 'las1001noches',
-		'USER': 'planificacion',
+		'USER': 'postgres',
     }
 }
 
