@@ -1,10 +1,12 @@
-<html>
-<head>
-<title>Materiales</title>
-</head>
-<body>
-	 {% for material in materiales %}
+
+{% extends "admin/base_site.html" %}
+{% block title %} Materiales {% endblock %}
+{% block content %}
+{% for material in materiales %}
 	   <a href="{% url 'Datos.views.detalle'  material.id %}"> {{material.descripcion}} </a></br>
-	 {% endfor %}	
-</body>
-</html>
+	 {% endfor %}
+{% endblock %}
+
+
+
+
